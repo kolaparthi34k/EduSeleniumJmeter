@@ -1,0 +1,30 @@
+
+A WebElement in Selenium represents an element on a web page. It provides methods to interact with and manipulate the element. 
+
+Here are some common methods and operations you can perform with WebElement:
+
+Finding Elements: You can use various locators (such as XPath, CSS selectors, ID, name, class name, etc.) to find web elements on a web page.
+
+WebElement element = driver.findElement(By.id("elementId"));
+
+Interacting with Elements: Once you've found an element, you can interact with it using methods like click(), sendKeys(), getText(), etc.
+element.click();  // Clicks the element
+element.sendKeys("text");  // Sends text to the element
+String text = element.getText();  // Retrieves text from the element
+
+Checking Element State: You can check various states of elements, such as whether it's displayed, enabled, or selected.
+boolean isDisplayed = element.isDisplayed();  // Checks if the element is displayed
+boolean isEnabled = element.isEnabled();  // Checks if the element is enabled
+boolean isSelected = element.isSelected();  // Checks if the element is selected
+
+Manipulating Element Attributes: You can get or set attributes of elements.
+String value = element.getAttribute("attributeName");  // Gets the value of the specified attribute
+element.clear();  // Clears the text from an input field
+element.sendKeys("new text");  // Sends new text to an input field
+
+Element Location and Size: You can get the location and size of an element on the page.
+Point location = element.getLocation();  // Gets the location of the element on the page
+Dimension size = element.getSize();  // Gets the size of the element
+
+Element CSS Values: You can get the value of CSS properties of an element.
+String color = element.getCssValue("color");  // Gets the color of the elem
